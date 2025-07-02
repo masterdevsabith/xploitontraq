@@ -1,6 +1,16 @@
 {
   "rewrites": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "api.ontraq.in"
+        }
+      ],
+      "destination": "https://studbud-backend-server.onrender.com/"
+    },
+    {
       "source": "/:path*",
       "has": [
         {
