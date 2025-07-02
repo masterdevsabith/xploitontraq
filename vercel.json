@@ -1,9 +1,14 @@
 {
-  "redirects": [
+  "rewrites": [
     {
       "source": "/:path*",
-      "destination": "https://studbud-backend-server.onrender.com/:path*",
-      "permanent": true
+      "has": [
+        {
+          "type": "host",
+          "value": "api.ontraq.in"
+        }
+      ],
+      "destination": "https://studbud-backend-server.onrender.com/:path*"
     }
   ]
 }
